@@ -15,6 +15,7 @@ public class Main {
         allMenus.add(pancakeHouseMenu);
         allMenus.add(dinerMenu);
         allMenus.add(cafeMenu);
+        allMenus.add(dessertMenu);
 
         pancakeHouseMenu.add(new MenuItem("ET Pancakes", "Eggs, Toast, Pancakes",true, 2.09));
         pancakeHouseMenu.add(new MenuItem("Pancakes", "Pancakes",true, 2.09));
@@ -23,12 +24,12 @@ public class Main {
 
         dinerMenu.add(new MenuItem("pasta", "pasta with bread",true,2.90));
         dinerMenu.add(new MenuItem("pasta meat", "pasta with meatballs",false,3.89));
+
         dinerMenu.add(dessertMenu);
         lunchMenus.add(dinerMenu);
         lunchMenus.add(cafeMenu);
 
         dessertMenu.add(new MenuItem("apple pie", "apple with",true, 1.59));
-
 
 
         WaiterBot waiterBotall = new WaiterBot(allMenus);
